@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/highScoreText"
+        android:layout_width="159dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="34dp"
+        android:gravity="center"
+        android:text="High Score: 0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/scoreText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreText"
+        android:layout_width="158dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="37dp"
+        android:gravity="center"
+        android:text="Score: 0"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/timeText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeText"
+        android:layout_width="157dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="45dp"
+        android:gravity="center"
+        android:text="Time: "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="43dp"
+        app:layout_constraintBottom_toTopOf="@+id/startButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="0"
+            android:layout_column="2"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:onClick="increaseScore"
+            app:srcCompat="@drawable/download"
+            tools:layout_editor_absoluteX="59dp"
+            tools:layout_editor_absoluteY="194dp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:onClick="start"
+        android:text="Start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="#C30B0B" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
